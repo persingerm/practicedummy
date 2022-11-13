@@ -1,4 +1,4 @@
 [CmdletBinding]
 Get-ChildItem ./ -Recurse -OutVariable Stuff
-
-Write-Output $Stuff >> $GITHUB_STEP_SUMMARY
+$Stuff
+bash "echo $Stuff >> $GITHUB_STEP_SUMMARY"
