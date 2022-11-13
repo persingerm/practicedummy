@@ -43,7 +43,7 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          ToEcho=$Stuff >> $env:GITHUB_ENV
+          "ToEcho=$Stuff" >> $env:GITHUB_ENV
           
       - name: more summary
         run: |
