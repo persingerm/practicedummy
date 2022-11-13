@@ -43,5 +43,5 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          Write-Output 'summary text from pwsh shell.' >> $GITHUB_STEP_SUMMARY
+          echo 'summary text from pwsh shell.' >> $GITHUB_STEP_SUMMARY
         
