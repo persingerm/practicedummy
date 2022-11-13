@@ -1,3 +1,4 @@
-Get-ChildItem ./ -Recurse
+[CmdletBinding]
+Get-ChildItem ./ -Recurse -OutVariable Stuff
 
-Write-Output 'script said some things' >> $GITHUB_STEP_SUMMARY
+Write-Output $Stuff >> $GITHUB_STEP_SUMMARY
