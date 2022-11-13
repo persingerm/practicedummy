@@ -1,4 +1,4 @@
 [CmdletBinding]
 Get-Process -OutVariable Stuff
-$Stuffed = $Stuff | ForEach-Object {($_).ToString()}
+[string[]]$Stuffed = $Stuff
 "MP=$Stuffed" >> $env:GITHUB_ENV
