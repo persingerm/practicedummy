@@ -47,5 +47,5 @@ jobs:
       - name: more summary
         run: |
           echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
-          echo ${{env.MP}} >> $GITHUB_STEP_SUMMARY
+          echo "${{env.MP}}" >> $GITHUB_STEP_SUMMARY
         
