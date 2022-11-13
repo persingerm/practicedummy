@@ -45,5 +45,5 @@ jobs:
           ./Script.ps1
           
       - name: more summary
-      run: echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
+        run: echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
         
