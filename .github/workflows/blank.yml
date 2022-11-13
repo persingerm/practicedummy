@@ -35,8 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Job Summary
-        run: |
+      #- name: Job Summary
+      -  run: |
           echo '## Very Important Results :mag:' >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
         
@@ -45,7 +45,7 @@ jobs:
         run: |
           ./Script.ps1
           
-      - name: more summary
-        run: |
+      #- name: more summary
+      - run: |
           echo "${{env.MP}}" >> $GITHUB_STEP_SUMMARY
         
