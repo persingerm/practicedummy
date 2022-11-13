@@ -43,5 +43,7 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          echo 'summary text from pwsh shell.' >> $GITHUB_STEP_SUMMARY
+          
+      - name: more summary
+      run: echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
         
