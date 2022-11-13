@@ -43,8 +43,10 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          $ToEcho=$Stuff >> $GITHUB_STEP_SUMMARY
+          ToEcho=$Stuff >> $env:GITHUB_ENV
           
       - name: more summary
-        run: echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
+        run: |
+          echo 'this is more text I added' >> $GITHUB_STEP_SUMMARY
+          ${{env.ToEcho}} >> $GITHUB_STEP_SUMMARY
         
