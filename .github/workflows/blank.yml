@@ -37,7 +37,7 @@ jobs:
           
       - name: Job Summary
         run: |
-        echo 'This is text in a summary :rocket:' >> $GITHUB_STEP_SUMMARY
+          echo 'This is text in a summary :rocket:' >> $GITHUB_STEP_SUMMARY
         
       - name: Run a script
         run: ./Script.ps1
