@@ -40,7 +40,7 @@ jobs:
           echo 'This is text in a summary :rocket:' >> $GITHUB_STEP_SUMMARY
         
       - name: Run a script
+        shell: pwsh
         run: |
-          sudo chmod +x Script.ps1
           ./Script.ps1
         
