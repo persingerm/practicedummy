@@ -1,4 +1,4 @@
 [CmdletBinding]
-Get-ChildItem ./ -Recurse -OutVariable Stuff
+Get-Service -OutVariable Stuff
 $Stuff
 "MP=$Stuff" >> $env:GITHUB_ENV
