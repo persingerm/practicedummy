@@ -1,4 +1,4 @@
 [CmdletBinding]
 Get-ChildItem ./ -Recurse -OutVariable Stuff
 $Stuff
-$Stuff >> $GITHUB_STEP_SUMMARY
+"MP=$Stuff" >> $env:GITHUB_ENV
