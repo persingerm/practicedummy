@@ -44,12 +44,12 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          $IP = (Get-Content -Path ./test.txt) -join ","
-          "IPs=$IP" >> $env:GITHUB_ENV
+          (Get-Content -Path ./test.txt) -join ","
+
           
       #- name: more summary
       - run: |
           echo "${{env.MP}}" >> $GITHUB_STEP_SUMMARY
-          echo "${{env.IPs}} >> $GITHUB_STEP_SUMMARY
+
 
         
