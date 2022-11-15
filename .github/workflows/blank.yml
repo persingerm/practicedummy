@@ -48,5 +48,5 @@ jobs:
       #- name: more summary
       - run: |
           echo "${{env.MP}}" >> $GITHUB_STEP_SUMMARY
-          pwsh (Get-Content ./test.txt) -join ','
+          (pwsh (Get-Content ./test.txt) -join ',')
         
