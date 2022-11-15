@@ -44,7 +44,7 @@ jobs:
         shell: pwsh
         run: |
           ./Script.ps1
-          $IP = (Get-Content -Path ./test.txt) -join ','
+          $IP = (Get-Content -Path ./test.txt) -join ","
           "IPs=$IP" >> $env:GITHUB_ENV
           
       #- name: more summary
