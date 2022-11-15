@@ -46,13 +46,13 @@ jobs:
         run: |
           ./Script.ps1
           $IP = (Get-Content -Path ./test.txt) -join ","
-          Write-Output $IP
+          "IN=$IP" >> $env:GITHUB_ENV
 
           
       #- name: more summary
       - run: |
           echo "${{env.MP}}" >> $GITHUB_STEP_SUMMARY
-          echo ${{steps.script.outputs.IP}}
+          echo "${{env.IN}}"
 
 
         
